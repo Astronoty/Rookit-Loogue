@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -71,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Cameras\AbstractTargetFollower.cs" />
     <Compile Include="Assets\Cameras\AutoCam.cs" />
+    <Compile Include="Assets\Cameras\CameraSwitch.cs" />
     <Compile Include="Assets\Cameras\FreeLookCam.cs" />
     <Compile Include="Assets\Cameras\Lookatball.cs" />
     <Compile Include="Assets\Cameras\PivotBasedCameraRig.cs" />
@@ -103,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Fonts\OpenSans\License!.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
