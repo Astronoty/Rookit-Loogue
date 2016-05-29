@@ -10,23 +10,18 @@ public class Explosion : MonoBehaviour {
         Vector3 carVelocity = gameObject.GetComponent<Rigidbody>().velocity; 
         carVelocity.y = 0;
         carVelocity /= gameObject.GetComponent<Rigidbody>().velocity.magnitude;
-        if (other.relativeVelocity.magnitude > 50 && other.gameObject.CompareTag("Car"))
+        if (other.relativeVelocity.magnitude > 50 && other.gameObject.CompareTag("Car") && other.gameObject.GetComponent<Rigidbody>().velocity.magnitude < GetComponent<Rigidbody>().velocity.magnitude)
         {
-            if (other.gameObject.GetComponent<Rigidbody>().velocity.magnitude < GetComponent<Rigidbody>().velocity.magnitude)
-            {
-                Destroy(other.gameObject);
-                
-                
-                               
-                gameObject.GetComponent<Rigidbody>().velocity = carVelocity * speedAfterExplosion;
-                Instantiate(explosion, other.transform.position, other.transform.rotation);
-            }
+            Destroy(other.gameObject);
+            Instantiate(explosion, other.transform.position, other.transform.rotation);
+            gameObject.GetComponent<Rigidbody>().velocity = carVelocity * speedAfterExplosion + new Vector3(0, -gameObject.GetComponent<Rigidbody>().velocity.y, 0);    
+       
 
         }
 	}
 
     IEnumerator delay()
     {
-        yield return new WaitForSeconds(.05f);
+        yield return new WaitForSeconds(1f);
     }
 }

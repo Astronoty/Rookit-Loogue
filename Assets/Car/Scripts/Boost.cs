@@ -11,7 +11,6 @@ public class Boost : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        Vector3 down = transform.TransformDirection(Vector3.down);
         if (Input.GetKey(KeyCode.LeftShift) && boost > 0) 
         {
             GetComponent<Rigidbody>().AddForce(transform.forward * forceMagnitude, ForceMode.Acceleration);
