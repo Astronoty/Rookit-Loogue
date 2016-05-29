@@ -7,7 +7,9 @@ public class Speed : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        speedDisplay.text = "Speed: " + ((int)gameObject.GetComponent<Rigidbody>().velocity.magnitude).ToString();
+        Vector3 speed = gameObject.GetComponent<Rigidbody>().velocity;
+        speed.y = 0;
+        speedDisplay.text = "Speed: " + ((int)speed.magnitude).ToString();
 	}
 
     
