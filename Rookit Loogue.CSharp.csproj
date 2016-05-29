@@ -82,6 +82,7 @@
     <Compile Include="Assets\Car\Scripts\Jump.cs" />
     <Compile Include="Assets\Car\Scripts\Mudguard.cs" />
     <Compile Include="Assets\Car\Scripts\SkidTrail.cs" />
+    <Compile Include="Assets\Car\Scripts\Speed.cs" />
     <Compile Include="Assets\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Car\Scripts\WheelEffects.cs" />
     <Compile Include="Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
