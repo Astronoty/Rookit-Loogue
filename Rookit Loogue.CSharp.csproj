@@ -96,6 +96,7 @@
     <Compile Include="Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
     <Compile Include="Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
     <Compile Include="Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+    <Compile Include="Assets\Field Elements\Goal.cs" />
     <Compile Include="Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
     <Compile Include="Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
     <Compile Include="Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />

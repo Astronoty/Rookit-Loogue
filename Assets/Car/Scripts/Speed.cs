@@ -12,5 +12,4 @@ public class Speed : MonoBehaviour {
         speedDisplay.text = "Speed: " + ((int)speed.magnitude).ToString();
 	}
 
-    
 }

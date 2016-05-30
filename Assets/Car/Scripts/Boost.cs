@@ -23,7 +23,7 @@ public class Boost : MonoBehaviour {
     
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Capsule"))
+        if(other.CompareTag("Boost"))
         {
             Destroy(other.gameObject);
             boost += 50;
