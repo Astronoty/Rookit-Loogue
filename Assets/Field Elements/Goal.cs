@@ -20,7 +20,7 @@ public class Goal : MonoBehaviour {
             Instantiate(explosion, other.transform.position, other.transform.rotation);
             IncrementScore();
             print("meme");
-            Time.timeScale = 0.25f;
+            Time.timeScale = 1f;
         }
     }
 
